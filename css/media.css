@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* TABLET & MOBILE */
+@media (max-width: 1000px) {
+
+    header {
+        justify-content: left;
+
+        background-color: rgba(255, 255, 255, 0.8);
+
+        color: #050e24;
+    }
+
+    #logo {
+        padding-left: 3%;
+    }
+
+    .slide-open {
+        display: block;
+    }
+
+    #reserve_aside {
+        display: flex;
+    }
+
+    #gnb,
+    #reserve_header {
+        display: none;
+    }
+
+    #wrap header img {
+        filter: invert(4%) sepia(35%) saturate(5915%) hue-rotate(219deg) brightness(93%) contrast(99%);
+    }
+
+    .facility_photo li {
+        width: 48%;
+    }
+
+    .facility_photo li:nth-child(1),
+    .facility_photo li:nth-child(2) {
+        padding-bottom: 1.5em;
+    }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .atta_banner_text {
+        height: 234.375px;
+
+        line-height: 120%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+
+    .slide ul li:first-child {
+        padding-top: 80px;
+    }
+
+    .slide_logo img {
+        max-height: 30px;
+    }
+
+    .btn_close img {
+        max-height: 25px;
+    }
+
+    .atta_banner_text {
+        height: 140.625px;
+
+        line-height: 120%;
+    }
+
+    .room_photo li h3 {
+        padding: 3% 0%;
+    }
+
+    .room_photo li p {
+        line-height: 170%;
+        padding-bottom: 5%;
+    }
+
+    .facility_photo li img {
+        max-width: 270px;
+        max-height: 270px;
+    }
+
+    footer>div {
+        padding: 3% 5%;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+}
+
+/* MOBILE++ */
+@media (max-width: 400px) {
+    .atta_banner_text {
+        font-size: 140%;
+    }
+}
